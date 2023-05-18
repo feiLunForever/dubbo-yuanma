@@ -46,7 +46,7 @@ public class Application {
         reference.setInterface(DemoService.class);
         reference.setGeneric("false");
 
-        DubboBootstrap bootstrap = DubboBootstrap.getInstance();
+        DubboBootstrap bootstrap = DubboBootstrap.getInstance(); // 创建DubboBootstrap，指定ApplicationConfig以及RegistryConfig
         bootstrap.application(new ApplicationConfig("dubbo-demo-api-consumer"))
                 .registry(new RegistryConfig("zookeeper://127.0.0.1:2181"))
                 .reference(reference)

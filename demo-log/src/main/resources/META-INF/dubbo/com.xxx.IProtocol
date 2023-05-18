@@ -1,0 +1,2 @@
+tcp = com.xxx.impl.TcpProtocol
+http = com.xxx.impl.HttpProtocol

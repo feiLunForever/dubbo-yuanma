@@ -40,7 +40,7 @@ public class Application {
     private static void startWithBootstrap() {
         ServiceConfig<DemoServiceImpl> service = new ServiceConfig<>();
         service.setInterface(DemoService.class);
-        service.setRef(new DemoServiceImpl());
+        service.setRef(new DemoServiceImpl()); // 指定业务接口的实现，由该对象来处理Consumer的请求
 
         DubboBootstrap bootstrap = DubboBootstrap.getInstance();
         bootstrap.application(new ApplicationConfig("dubbo-demo-api-provider"))

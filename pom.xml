@@ -152,6 +152,7 @@
         <module>dubbo-metadata</module>
         <module>dubbo-build-tools</module>
         <module>dubbo-demo/json-rpc-demo</module>
+        <module>demo-log</module>
     </modules>
 
     <dependencyManagement>
